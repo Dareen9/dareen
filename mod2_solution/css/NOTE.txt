@@ -1,0 +1,1 @@
+This layout.css file and the one in the "mod2_solution" folder are exactly the same.
