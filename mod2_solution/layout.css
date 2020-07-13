@@ -36,9 +36,10 @@ h1{
   font-family:cursive;
   font-weight: bold;
   overflow: hidden;
-  background-color:crimson;
   color: aliceblue; 
-}
+}.extra1{background-color:crimson;}
+.extra2{background-color:blueviolet;}
+.extra3{background-color:rgb(78, 20, 29);}
 .row {
   width: 100%;
 }
