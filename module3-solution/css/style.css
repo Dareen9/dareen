@@ -66,6 +66,7 @@ body {
   }
   #nav-list a:hover {
     background: #85bdbd;
+    box-shadow: 0 1px 5px 1px  #85bdbd;
   }
   #nav-list a span {
     font-size: 2em;  
@@ -91,9 +92,7 @@ body {
     overflow: hidden;
     padding: 10px;
   }
-  #chickenSection:hover, #beefSection:hover, #sushiSection:hover {
-    box-shadow: 0 1px 5px 1px  #85bdbd;
-  }
+ 
   #chickenSection span, #beefSection span, #sushiSection span {
     text-align: center;
     font-size: 1.6em;
