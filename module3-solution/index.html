@@ -1,0 +1,81 @@
+<!--lazem kol haga fe bootstrap tekoon defined fe container class (law child ma3andoosh bas parent 3ando 3ady)-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>David Chu's China Bistro</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+  </head>
+<body>
+  <header>
+    <nav id="header-nav" class="navbar navbar-default navbar-expand-md navbar-light"><!-- nav is used to define the color of the header !-->
+      <div class="container">
+        <div class="navbar-header"> <!-- for the logo of the brand !-->
+         <a href="index.html" class="float-left d-block d-sm-none d-none d-sm-block d-md-none d-none d-md-block d-lg-none d-none d-lg-block d-xl-none d-none d-xl-block"> <!--makes the logo visible on large and medium-sized screens only  -->
+            <div id="logo-img"> </div>
+          </a>
+          <div class="navbar-brand"><!--for the name of the brand!-->
+            <a href="index.html"><h1>Food, LLC</h1></a>
+          </div>
+          <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false" aria-controls="collapsable-nav" aria-haspopup="true" data-toggle="dropdown">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          
+        <!--lama id="collapsable-nav" fel mobile view da ely haykoon fel menu 3ashan fe meno button fe data-target="#collapsable-nav" bara el mobie view hatkoon bara 3ady-->
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+        
+          <ul id="nav-list" class="nav navbar-nav">
+            <!--you'll need to copy & paste the home button in the other links (menu) when you're done 
+                BUT REMOVE the "ACTIVE"-->
+            <div><hr  class="d-block d-sm-none d-none d-sm-block d-md-none active"></div>
+            <li class="d-block d-sm-none d-none d-sm-block d-md-none active">
+              <a href="#chickenSection"><br class="d-none d-sm-block d-sm-none d-md-block"> Chicken &nbsp</a><!-- &nbsp:adds a scapce 3ashan kolo ykoon aligned perfectly-->
+            </li>
+            <li class="d-block d-sm-none d-none d-sm-block d-md-none active">
+             <a href="#beefSection"><br class="d-none d-sm-block d-sm-none d-md-block"> Beef  &nbsp</a><!-- &nbsp:adds a scapce 3ashan kolo ykoon aligned perfectly-->
+           </li>
+           <li  class="d-block d-sm-none d-none d-sm-block d-md-none active">
+             <a href="#sushiSection"><br class="d-none d-sm-block d-sm-none d-md-block"> Sushi &nbsp</a><!-- d-none d-sm-block: 3ashan matbansh fel mobile view -->
+           </li>
+         </ul><!-- #nav-list -->
+       </div><!-- .collapse .navbar-collapse -->
+      </div><!-- .container -->
+    </div>
+   </nav><!-- #header-nav -->
+  </header>
+   
+     <!-- start of #main-content -->
+
+    <div id="main-content" class="container">
+      <h2>Our Menu</h2>
+      <div id="home-tiles" class="row">
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <a><div id="chickenSection"><span><h3>CHICKEN</h3><p class="menu-item-details">lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque inventore esse minima incidunt impedit. Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam.</p>
+           </span></div></a>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <a><div id="beefSection"><span><h3>BEEF</h3><p class="menu-item-details">lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque inventore esse minima incidunt impedit. Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam.</p>
+        </span></div></a>
+      </div>
+      <div class="col-lg-4 col-md-12 col-sm-12">
+        <a><div id="sushiSection"><span><h3>SUSHI</h3><p class="menu-item-details">lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque inventore esse minima incidunt impedit. Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam.</p>
+        </span></div>
+        </a>
+      </div>
+    </div><!-- End of #home-tiles -->
+  </div><!-- End of #main-content -->
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-3.5.1.min.js"></script><!-- howa 3amelha 2.1.4-->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

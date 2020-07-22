@@ -16,7 +16,7 @@ h1{
   border: 3px solid black;
   padding: 10px;
   padding-top: 0px;
-  background-color: rgb(99, 157, 165);
+  background: linear-gradient(to right, #b8c5da, #3798d8);
   width: 90%;
   height: fit-content;
   font-family: cursive;

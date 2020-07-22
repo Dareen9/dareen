@@ -1,0 +1,193 @@
+body {
+    font-size: 16px;
+    color: #fff;
+    background-color:black;
+    font-family: 'Oxygen', sans-serif;
+  }
+  
+  /** HEADER **/
+  #header-nav {
+    background-color: #85bdbd;
+    border-radius: 0;
+    border: 0;
+  }
+  #logo-img {
+    background: url('../images/food.png') no-repeat;
+    width: 100px;
+    height: 100px;
+    margin-left: 30px;
+  }
+  .navbar-brand {
+    padding-top: 25px;
+  }
+   .navbar-brand h1 { /*title */
+      font-family: 'Lora', serif;
+      color: black;
+      font-size: 2.7em;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-shadow: 1px 1px 1px black;/*gives a nice shadow to the text*/
+      line-height: .75;
+    }
+    .navbar-brand a:hover, .navbar-brand a:focus {/*3ashan el name ykon clickable bas fe nafs el wa2t maye3melsh underline lama a hover 3aleh aw lama adoos 3aleh bel keyboard(focus)*/
+      text-decoration: none;
+    }
+    .navbar-header .icon-bar {
+      display: block;
+      width: 25px; 
+      height: 3px;
+      margin-top: 4px;
+      transition: all 0.4s;
+      border: 1px solidblack;
+      background-color:black;
+    }
+     /* kanet fe stack overflow ma3a ely fo2 lel menu bar*/
+    .navbar-toggler {
+      border: none;
+      background: transparent !important;
+    }
+    #collapsable-nav div hr{/*line fo2 awel haga fel menu when open*/
+      width: 80%;
+      background-color:   black;
+      height: 1px;
+    }
+    
+   .navbar-header button.navbar-toggler {
+      clear: both;
+      margin-top: -30px;
+    }
+  #nav-list {
+    margin-top: 10px;
+  }
+  
+  #nav-list a {
+    color: black;
+    text-align: center;
+  }
+  #nav-list a:hover {
+    background: #85bdbd;
+  }
+  #nav-list a span {
+    font-size: 2em;  
+  }
+
+  .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+    border: 1px solidblack;
+  }
+  .navbar-header button.navbar-toggle {
+    clear: both;
+    margin-top: -30px;
+  }
+  /* END HEADER */
+  /* HOME PAGE */
+  #chickenSection, #beefSection, #sushiSection {
+    height: auto !important;
+    width: 100%; /*100% men el container not the whole screen*/
+    margin-bottom: 15px;
+    margin-top: 0px;
+    position: relative;
+    border: 2px solid  #85bdbd;
+    box-shadow: 0 0 50px #85bdbd;
+    overflow: hidden;
+    padding: 10px;
+  }
+  #chickenSection:hover, #beefSection:hover, #sushiSection:hover {
+    box-shadow: 0 1px 5px 1px  #85bdbd;
+  }
+  #chickenSection span, #beefSection span, #sushiSection span {
+    text-align: center;
+    font-size: 1.6em;
+    background-color: #000;
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Lora', serif;
+    
+  }
+  #chickenSection span h3, #beefSection span h3, #sushiSection span h3{
+    color: #85bdbd;
+    margin-top: 8px;
+    margin-bottom: 0px;
+  }
+  #main-content h2{
+    text-shadow: 1px 1px 1px #85bdbd;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 2.8em;
+    text-align: center;
+    color: #85bdbd;
+  } 
+  .menu-item-details {
+    font-size: .89em;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+  }
+  
+  /********** Large devices only *********  XL  BOOSTRAP 4*/
+  @media (min-width: 1200px) {
+    #collapsable-nav{
+      float: right;
+      margin-right: -380px;
+      margin-top: 100px;
+      
+    }
+  }
+  /********** Medium devices only ********* LG BOOSTRAP 4*/
+  @media (min-width: 992px) and (max-width: 1199px) {
+    /* Header */
+    #collapsable-nav{
+      float: right;
+      margin-right: -370px;
+      margin-top: 15px;
+      font-size: 0.92em;
+     }
+    /* End Header */
+  }
+  /********** Small devices only ********* MD BOOSTRAP 4*/
+  @media (min-width: 768px) and (max-width: 991px) {
+    #collapsable-nav{
+      float: right;
+    }
+  }
+  /********** Extra small devices only ********* SM BOOSTRAP 4*/
+  @media (max-width: 767px) {
+    #collapsable-nav ul {
+      text-align:center;
+    }
+    #collapsable-nav ul li {
+      display: inline;
+    }
+    #collapsable-nav a { /* Collapsed nav menu text */
+      font-size: 1.8em;
+      font-weight: 850;
+    }
+    .container #home-tiles{
+        margin-top: 18px;
+        padding: 0;
+      }
+    #chickenSection, #beefSection, #sushiSection { /*3ahshan el text was filling the whole screen's width in the small screen */
+        margin: 0 auto 15px;/*   0 : margin top=0
+                              auto : to be centred in the middle *margin right**margin left will also be set to auto by default*
+                              15px : margin bottom */
+      } 
+  }
+  /********** BOOSTRAP 4   xs---> max-width: 575 ***************************/
+  
+  /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+  @media (max-width: 479px) {
+        /* Header */
+        #logo-img{
+          margin-left: 0px !important;
+        } 
+        .navbar-brand h1 { /* Restaurant name */
+          padding-top: 5px;
+          font-size: 1.3em;
+        }
+        /* End Header */
+        /* Home page */
+        #chickenSection, #beefSection, #sushiSection {
+          margin: 0 auto 15px;/*  0    : margin top=0
+                                  auto : to be centred in the middle *margin right**margin left will also be set to auto by default*
+                                  15px : margin bottom */
+        }
+  }
