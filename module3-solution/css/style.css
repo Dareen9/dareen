@@ -43,6 +43,9 @@ body {
     }
      /* kanet fe stack overflow ma3a ely fo2 lel menu bar*/
     .navbar-toggler {
+      position: relative;
+      top: 0;
+      right: 0;
       border: none;
       background: transparent !important;
     }
