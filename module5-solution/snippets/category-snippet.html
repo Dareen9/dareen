@@ -1,0 +1,18 @@
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12>
+  <a href="#" onclick="$dc.loadMenuItems('{{short_name}}');">
+    <div class="category-tile">
+      <img width="200" height="200" src="images/menu/{{short_name}}/{{short_name}}.jpg" alt="{{name}}">
+      <span>{{name}}</span>
+    </div>
+  </a>
+</div>
+
+<!--tany part men div el main content fel menu categories page 
+    bas hena ba2a instead of write the same thing down a gazillion times with diff pics and names for each meal, 
+    we called a "ruby on rails" file from an external website where the menu details is stored in an array-->
+
+
+
+    <!--PLEASE NOTE THAT MENU ITEMS WERE PREVIOUSLY STORED IN A SEPERATE SCETION 
+        ALTHOUGH THEY ARE NOT HERE 
+        SO WE WILL NEED TO WRITE THIS "finalHtml += "<section class='row'>";" IN THE "buildCategoriesViewHtml" FUNCTION IN THE script.js FILE-->

@@ -1,0 +1,421 @@
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #61122f;
+  font-family: 'Oxygen', sans-serif;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: #f6b319;
+  border-radius: 0;
+  border: 0;
+  margin-bottom: 10px;
+}
+#logo-img {
+  background: url('../images/restaurant-logo_large.png') no-repeat;
+  width: 150px;
+  height: 150px;
+  margin: 10px 15px 10px -10px;
+}
+.navbar-brand {
+  padding-top: 25px;
+}
+ .navbar-brand h1 { /* Restaurant name although there's no h1 defined under the navbar-brand class */
+    font-family: 'Lora', serif;
+    color: #557c3e;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;/*gives a nice shadow to the text*/
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+  }
+  .navbar-brand a:hover, .navbar-brand a:focus {/*3ashan el name ykon clickable bas fe nafs el wa2t maye3melsh underline lama a hover 3aleh aw lama adoos 3aleh bel keyboard(focus)*/
+    text-decoration: none;
+  }
+  .navbar-brand p { /* Kosher cert */
+    color: #000;
+    text-transform: uppercase;
+    font-size: .7em;
+    margin-top: 15px;
+  }
+  .navbar-brand p span { /* Star-K   el text yekoon bade2 men nos el soora (maykonsh 3andaha men fo2) */
+    vertical-align: middle;
+  }
+
+  .navbar-header .icon-bar {
+    display: block;
+    width: 25px; 
+    height: 3px;
+    margin-top: 4px;
+    transition: all 0.4s;
+    border: 1px solid #61122f;
+    background-color:#557c3e;
+  }
+   /* kanet fe stack overflow ma3a ely fo2 lel menu bar*/
+  .navbar-toggler {
+    border: none;
+    background: transparent !important;
+  }
+  #collapsable-nav div hr{/*line fo2 awel haga fel menu when open*/
+    width: 80%;
+    background-color:   #951C49;
+    height: 1px;
+  }
+  
+ .navbar-header button.navbar-toggler {
+    clear: both;
+    margin-top: -30px;
+  }
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: #951C49;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+#nav-list a span {
+  font-size: 1.8em;  
+}
+
+#phone a { /* Phone number */
+  text-align: right;
+  padding-bottom: 0;
+}
+#phone div { /* We Deliver */
+  color: #557c3e;
+  text-align: right;
+  padding-right: 15px;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+/* END HEADER */
+/* FOOTER */
+.card-footer {
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #222;
+  border-top: 0;
+}
+.card-footer div.row {
+  margin-bottom: 35px;/*3ashan neb3ed el text 3an el copyrights ely taht """""THIS IS THE ONE"""""*/
+}
+#hours, #address {
+  line-height: 2;/*to separate the content from the title ("address"-->title and the actual address-->content)*/
+}
+#hours > span, #address > span {
+  font-size: 1.3em;/*increase size of "hours" & "address"*/
+}
+#address p {
+  color: #557c3e;
+  font-size: .8em;
+  line-height: 1.8;
+}
+#testimonials {
+  font-style: italic;
+}
+#testimonials p:nth-child(2) {/*second p (second testimonial) in #testimonials*/ 
+  margin-top: 25px;           /*same as:
+                                #testimonials p:nth-child(1) {
+                                      margin-bottom: 25px;}*/
+}
+.card-footer hr{
+  height: 1px;
+  background-color:  #557c3e;
+}
+/* END FOOTER */
+/* HOME PAGE */
+.container .jumbotron {
+  box-shadow: 0 0 50px #3F0C1F;
+  border: 2px solid #3F0C1F;
+}
+#menu-tile, #specials-tile, #map-tile {
+  height: 250px;
+  width: 100%; /*100% men el container not the whole screen*/
+  margin-bottom: 15px;/*3ashan aseeb makan lel footer ely gowah kelmet map/specials/menu*/
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+}
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-tile {
+  background: url('../images/menu-tile.jpg') no-repeat;
+  background-position: center;
+}
+#specials-tile {
+  background: url('../images/specials-tile.jpg') no-repeat;
+  background-position: center;
+}
+
+#menu-tile span, #specials-tile span, #map-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;/*transparency*/
+}
+/*END HOME PAGE*/
+/* MENU CATEGORIES PAGE */
+#main-content h2{
+  margin-top: 20px;
+} 
+.category-tile { 
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 15px;
+}
+.category-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+.category-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-categories-title + div {/*next sibling of the same parent ya3ny law id=menu-categories fe div fa ehna 3ayzeeb awel child ykoon div bardo*/
+  margin-bottom: 50px;
+}
+/* END MENU CATEGORIES PAGE */
+
+/* START SINGLE CATEGORY PAGE*/
+
+.menu-item-tile {
+  margin-bottom: 25px;
+}
+.menu-item-tile hr {
+  width: 80%;
+  background-color:  white;
+  height: 1px;
+}
+.menu-item-tile .menu-item-price {
+  font-size: 1.1em;
+  text-align: right;
+  margin-top: -15px;
+  margin-right: -15px;
+}
+.menu-item-tile .menu-item-price span {
+  font-size: .6em;
+}
+.menu-item-photo {
+  position: relative;
+  border: 2px solid #3F0C1F; 
+  overflow: hidden;
+  padding: 0;
+  margin-right: -15px;
+  margin-left: auto;
+  margin-bottom: 20px;
+  max-width: 250px;
+}
+.menu-item-photo div {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80px;
+  background-color: #557c3e;
+  text-align: center;
+}
+.menu-item-description {
+  padding-right: 30px;
+}
+h3.menu-item-title {
+  margin: 0 0 10px;
+}
+.menu-item-details {
+  font-size: .9em;
+  font-style: italic;
+}
+/* END SINGLE CATEGORY PAGE*/
+
+
+/********** Large devices only *********  XL  BOOSTRAP 4*/
+@media (min-width: 1200px) {
+  #collapsable-nav{
+    float: right;
+    margin-right: -380px;
+    margin-top: 100px;
+    
+  }.navbar-brand h1 { /* Restaurant name */
+    font-size: 2.0em;
+  }
+  .container .jumbotron {
+    background: url('../images/jumbotron_1200.jpg') no-repeat;
+    height: 675px;
+    margin-top: 30px;
+  }
+}
+
+/********** Medium devices only ********* LG BOOSTRAP 4*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+  #collapsable-nav{
+    float: right;
+    margin-right: -370px;
+    margin-top: 15px;
+    font-size: 0.92em;
+   }
+  #logo-img {
+    background: url('../images/restaurant-logo_medium.png') no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: 5px 5px 5px 0;
+  }
+  /* End Header */
+
+   /* Home Page */
+   .container .jumbotron {
+    background: url('../images/jumbotron_992.jpg') no-repeat;
+    height: 558px;
+    margin-top: 30px;
+  }
+  /* End Home Page */
+}
+/********** Small devices only ********* MD BOOSTRAP 4*/
+@media (min-width: 768px) and (max-width: 991px) {
+  #collapsable-nav{
+    float: right;
+  }
+   /* Home Page */
+   .container .jumbotron {
+    background: url('../images/jumbotron_768.jpg') no-repeat;
+    height: 432px;
+    margin-top: 30px;
+  }
+  /* End Home Page */
+}
+/********** Extra small devices only ********* SM BOOSTRAP 4*/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  .navbar-brand p { /* Kosher cert */
+    font-size: .6em;
+    margin-top: 12px;
+  }
+  .navbar-brand p img { /* Star-K */
+    height: 17px;
+  }
+  #collapsable-nav ul {
+    text-align:center;
+  }
+  #collapsable-nav ul li {
+    display: inline;
+  }
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+  #call-btn > a {
+    font-size: 1.5em;
+    display: block;
+    margin: 0 20px;
+    margin-top: 13px;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: #f6b319;
+    color: #951c49;
+    
+  }
+  #xs-deliver {
+    margin-top: 5px;
+    font-size: .7em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  /* End Header */
+
+  /* Footer */
+  .card-footer section{
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .card-footer section:nth-child(3) {/*3rd section*/
+    margin-bottom: 0; /* margin already set on the whole row in the MAIN FUNCTION that applies to all sizes not the one above
+                        (has the comment THIS IS THE ONE next to it)fa mesh 3ayzeen tany*/
+  }
+  .card-footer section hr {
+    width: 60%;
+  }
+  /* End Footer */
+
+  /* Home Page */
+    .container .jumbotron {
+      margin-top: 13px;
+      padding: 0;
+    }
+    #menu-tile, #specials-tile { /*3ahshan el text was filling the whole screen's width in the small screen */
+      width: 360px;/*only works when we only know the image's size(here it's 360px)*/
+      margin: 0 auto 15px;/*   0 : margin top=0
+                            auto : to be centred in the middle *margin right**margin left will also be set to auto by default*
+                            15px : margin bottom */
+    } /*single category*/
+    .menu-item-photo {
+      margin-right: auto;
+    }
+    .menu-item-tile .menu-item-price {
+      text-align: center;/*3ashan kanet 3al yemeen lhales ma3a el soora fa we adjusted the photo but the price obviously didn't adjust with it */
+    }
+    .menu-item-description {
+      text-align: center;;
+      margin-top: 10px;
+    }
+    /*single category*/
+}
+/********** BOOSTRAP 4   xs---> max-width: 575 ***************************/
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+      /* Header */
+      .navbar-brand h1 { /* Restaurant name */
+        padding-top: 5px;
+        font-size: 6vw;
+      }
+      /* End Header */
+      
+      /* Home page */
+      #menu-tile, #specials-tile {
+        width: 280px;
+        margin: 0 auto 15px;/*  0    : margin top=0
+                                auto : to be centred in the middle *margin right**margin left will also be set to auto by default*
+                                15px : margin bottom */
+      }
+}
+
